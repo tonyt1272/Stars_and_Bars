@@ -65,9 +65,10 @@ def show_stars_and_bars(sb):
     print('Number of ways to write a number (n) as the sum of (k) non-negative integers.')
     # print('\n')
     print(f'n: (number of stars *) = {n}')
-    print(f'k: (numbber of bars |) = {k}',)
+    print(f'k: (number of non_negative integers) = {k}')
+    print(f'k-1: (number of bars |) = {k-1}',)
 
-    print(f'number of possible variations: {len(stars_and_bars)}', '\n')
+
 
     label_sb = 'Stars and Bars'
     label_bc = 'Bucket Counts'
@@ -78,7 +79,7 @@ def show_stars_and_bars(sb):
         current_bucket = count_buckets(item).astype('int')
         print(f'{str(item):{6*(n+k)}}', str(current_bucket))
         bucket_count_list.append(current_bucket)
-
+    print(f'number of possible variations: {len(stars_and_bars)}', '\n')
     return bucket_count_list
 
 
