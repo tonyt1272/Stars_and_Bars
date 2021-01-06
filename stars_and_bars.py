@@ -25,7 +25,6 @@ def place_bars(raw_stars, raw_bar_locs):
 def count_buckets(sb):
     """
     Generate the array representing the number of stars in each bucket of the current variation
-
     :param sb: A single stars and bars variation as a List
     :return: An array representing counts in each bucket
     """
@@ -67,8 +66,6 @@ def show_stars_and_bars(sb):
     print(f'n: (number of stars *) = {n}')
     print(f'k: (number of non_negative integers) = {k}')
     print(f'k-1: (number of bars |) = {k-1}',)
-
-
 
     label_sb = 'Stars and Bars'
     label_bc = 'Bucket Counts'
