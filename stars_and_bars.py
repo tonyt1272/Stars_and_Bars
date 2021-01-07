@@ -69,12 +69,13 @@ def show_stars_and_bars(sb):
 
     label_sb = 'Stars and Bars'
     label_bc = 'Bucket Counts'
-    print(f'{label_sb:{6 * (n + k)}} {label_bc:{10}}')
+    print(f'{label_sb:{3 * (n+k)}} {label_bc:{10}}')
 
     bucket_count_list = []  # list to hold the individual bucket count variations
     for item in sb:
+        item = ''.join(item)
         current_bucket = count_buckets(item).astype('int')
-        print(f'{str(item):{6*(n+k)}}', str(current_bucket))
+        print(f'{str(item):{3*(n+k)}}', str(current_bucket))
         bucket_count_list.append(current_bucket)
     print(f'number of possible variations: {len(stars_and_bars)}', '\n')
     return bucket_count_list
