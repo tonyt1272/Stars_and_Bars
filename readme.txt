@@ -5,4 +5,4 @@
 # algorithm and so does NOT calculate values using the binomial coefficient at ( n + k -1 )
 #                                                                              (   k-1    )
 # but derives values directly from the implementation of the algorithm.  This method is slow and presented here for
-# visual purposes only.
+# visualization purposes only.
